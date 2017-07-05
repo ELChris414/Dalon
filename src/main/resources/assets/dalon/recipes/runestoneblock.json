@@ -1,0 +1,15 @@
+{
+	"result": {
+		"item": "dalon:runestoneblock"
+	},
+	"pattern": [
+		"rr",
+		"rr"
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"r": {
+			"item": "dalon:runestone"
+		}
+	}
+}

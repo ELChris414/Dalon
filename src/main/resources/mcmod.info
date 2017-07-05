@@ -1,0 +1,16 @@
+[
+{
+  "modid": "dalon",
+  "name": "Dalon",
+  "description": "The bridge between the 6 bases of the world",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ELChris414"],
+  "credits": "McJty and his incredible tutorial",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,70 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "texture": {
+    	"particle": "dalon:blocks/runeforge/side",
+        "0": "dalon:blocks/runeforge/white",
+        "1": "dalon:blocks/runeforge/side",
+        "2": "dalon:blocks/runeforge/top",
+        "3": "blocks/iron_block",
+        "4": "blocks/log_big_oak",
+        "5": "blocks/gold_block",
+        "6": "blocks/coal_block",
+        "7": "dalon:blocks/runeforge/ink"
+    }
+  },
+  "variants": {
+	"facing":{
+		"defaults":{ "model":"dalon:transform/block" },
+		"auto":{ "model":"dalon:null" },
+        "north":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":180 } } },
+        "east":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":270 } } },
+        "south":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":0   } } },
+        "west":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":90  } } },
+        "up":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":180 } } },
+        "down":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":180 } } }
+  	}
+  },
+  "display": {
+  	"head": {
+        "rotation": [ 0, 0, 0 ],
+        "translation": [ 0, 0, 0],
+        "scale":[ 1, 1, 1 ]
+    },
+    "gui": {
+        "rotation": [ 30, 135, 0 ],
+        "translation": [ 0, 0, 0],
+        "scale":[ 0.625, 0.625, 0.625 ]
+    },
+    "ground": {
+        "rotation": [ 0, 0, 0 ],
+        "translation": [ 0, 3, 0],
+        "scale":[ 0.25, 0.25, 0.25 ]
+    },
+    "fixed": {
+        "rotation": [ 0, 0, 0 ],
+        "translation": [ 0, 0, 0],
+        "scale":[ 0.5, 0.5, 0.5 ]
+    },
+    "thirdperson_righthand": {
+        "rotation": [ 75, 45, 0 ],
+        "translation": [ 0, 2.5, 0],
+        "scale": [ 0.375, 0.375, 0.375 ]
+    },
+    "thirdperson_lefthand": {
+        "rotation": [ 75, 45, 0 ],
+        "translation": [ 0, 2.5, 0],
+        "scale": [ 0.375, 0.375, 0.375 ]
+    },
+    "firstperson_righthand": {
+        "rotation": [ 0, 135, 0 ],
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 0.40, 0.40, 0.40 ]
+    },
+    "firstperson_lefthand": {
+        "rotation": [ 0, 135, 0 ],
+        "translation": [ 0, 0, 0 ],
+        "scale": [ 0.40, 0.40, 0.40 ]
+    }
+  }
+}
