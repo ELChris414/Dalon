@@ -8,6 +8,7 @@ import elchris414.dalon.Config;
 import elchris414.dalon.Dalon;
 import elchris414.dalon.DalonBlocks;
 import elchris414.dalon.DalonStrings;
+import elchris414.dalon.blocks.GemInfuser;
 import elchris414.dalon.blocks.InactiveBlock;
 import elchris414.dalon.blocks.RuneForge;
 import elchris414.dalon.blocks.RuneStoneOre;
@@ -58,6 +59,7 @@ public class CommonProxy {
     	event.getRegistry().register(new InactiveBlock("runestoneblock", Material.GROUND));
     	event.getRegistry().register(new RuneForge());
     	GameRegistry.registerTileEntity(RuneForgeTileEntity.class, DalonStrings.MODID + "_runeforge");
+    	event.getRegistry().register(new GemInfuser());
     	Dalon.logger.log(Level.INFO, "Loaded blocks");
     	
     }
@@ -68,6 +70,7 @@ public class CommonProxy {
     	event.getRegistry().register(new ItemBlock(DalonBlocks.runestoneore).setRegistryName(DalonBlocks.runestoneore.getRegistryName()));
     	event.getRegistry().register(new ItemBlock(DalonBlocks.runestoneblock).setRegistryName(DalonBlocks.runestoneblock.getRegistryName()));
     	event.getRegistry().register(new ItemBlock(DalonBlocks.runeforge).setRegistryName(DalonBlocks.runeforge.getRegistryName()));
+    	event.getRegistry().register(new ItemBlock(DalonBlocks.geminfuser).setRegistryName(DalonBlocks.geminfuser.getRegistryName()));
     	// Items
     	event.getRegistry().register(new InactiveItem("runestone"));
     	event.getRegistry().register(new InactiveItem("unprocessedrunestone"));

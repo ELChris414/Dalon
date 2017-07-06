@@ -1,5 +1,6 @@
 package elchris414.dalon;
 
+import elchris414.dalon.blocks.GemInfuser;
 import elchris414.dalon.blocks.InactiveBlock;
 import elchris414.dalon.blocks.RuneForge;
 import elchris414.dalon.blocks.RuneStoneOre;
@@ -14,11 +15,14 @@ public class DalonBlocks {
 	public static InactiveBlock runestoneblock;
 	@GameRegistry.ObjectHolder("dalon:runeforge")
 	public static RuneForge runeforge;
+	@GameRegistry.ObjectHolder("dalon:geminfuser")
+	public static GemInfuser geminfuser;
 	
 	@SideOnly(Side.CLIENT)
 	public static void initModels() {
 		runestoneore.initModel();
 		runestoneblock.initModel();
 		runeforge.initModel();
+		geminfuser.initModel();
 	}
 }
