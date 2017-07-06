@@ -1,0 +1,10 @@
+/.gradle/
+/build/
+/.settings/
+/eclipse/
+/bin/
+.classpath
+.project
+modding_Client.launch
+modding_Server.launch
+/run/
