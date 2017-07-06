@@ -12,3 +12,8 @@ script: ./gradlew build -S
 branches:
   only:
     - master
+
+notifications:
+  webhooks:
+    secure: "m5GpAxB4PYp0Z4cO5DmbKPSFskVgfAMLUR+ljz1h20z1TkMsWOqI67rO+4SjABZulAmNmwjNAmWxf9PMId2XrdZG/JqK23jkuiQm4pfqLIL3Qj0txUkEPjIRzUB4FGaTqU03wLu2Zc0C71w3+i98On1x+8c2F1lgWhkUiMvZk6pusXpW7sdKwVAqphhrHhs7DRfzUWr0/Mn2XIpTZ9H6x25hfwXtVSiF6XvwoB7jSOPtJv9bRZhMkerlLQDsPFpzFsGOOtvOVxdRj3X1ydsQDGGK7KiHsXZmEzLgr/qTGAMr87b5WaW79jiWgrxtYy/Oy77tt7brokPwAez4h7dX6DktI+P6wWEqgZnYZXemrIaIs3A8X0IFPIWPnZf50wjFaXTtly6I/5Ae1jOfcaL56DcJb3m+5+qC7mwy787A+oE3RFJD4/nddsHa3FvP8QlxnSShCRX+ilA+Vr63kCc4TSr1GQYPZI3PZd+LxatAq7khaUwZbHdBfmxEYKSsELgNikLlGKoprw1FFSdmfy14JTjIcBMOuo8AIKAfvJzmpEH4XWzIZnZURa4xk04WhKFcYOauY9pMjFxOw2ZmJQi3if0P80Oi3P69kZtpaNZ7EV5n4cg1873rIdLXAtLV/Xi8rB08KvNrb1wnHFPm7jy1k6XHiJKJojZywbZaqpvro/4="
+    on_success: change
