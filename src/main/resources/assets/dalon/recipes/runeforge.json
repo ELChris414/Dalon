@@ -1,0 +1,29 @@
+{
+	"result": {
+		"item": "dalon:runeforge",
+		"count": 1
+	},
+	"pattern": [
+		"imp",
+		"bwb",
+		"bbb"
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"i": {
+			"item": "dalon:peninkbottle"
+		},
+		"p": {
+			"item": "dalon:ironpresser"
+		},
+		"b": {
+			"item": "dalon:whiteconcretebricks"
+		},
+		"m": {
+			"item": "dalon:magnifyingglassgoldenring"
+		},
+		"w": {
+			"item": "dalon:infusedredwool"
+		}
+	}
+}

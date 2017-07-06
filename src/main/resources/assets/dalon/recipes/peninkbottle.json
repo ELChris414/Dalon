@@ -1,0 +1,15 @@
+{
+	"result": {
+		"item": "dalon:peninkbottle",
+		"count": 1
+	},
+	"ingredients": [
+		{
+			"item": "dalon:pen"
+		},
+		{
+			"item": "dalon:inkbottle"
+		}
+	],
+	"type": "minecraft:crafting_shapeless"
+}

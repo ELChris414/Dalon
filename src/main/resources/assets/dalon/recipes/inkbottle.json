@@ -1,0 +1,16 @@
+{
+	"result": {
+		"item": "dalon:inkbottle",
+		"count": 1
+	},
+	"ingredients": [
+		{
+			"type": "forge:ore_dict",
+			"ore": "dyeBlack"
+		},
+		{
+			"item": "minecraft:glass_bottle"
+		}
+	],
+	"type": "minecraft:crafting_shapeless"
+}

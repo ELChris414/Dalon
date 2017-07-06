@@ -1,0 +1,15 @@
+{
+	"result": {
+		"item": "dalon:magnifyingglassgoldenring",
+		"count": 1
+	},
+	"ingredients": [
+		{
+			"item": "dalon:magnifyingglass"
+		},
+		{
+			"item": "dalon:goldenring"
+		}
+	],
+	"type": "minecraft:crafting_shapeless"
+}

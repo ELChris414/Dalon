@@ -1,6 +1,7 @@
 package elchris414.dalon;
 
 import elchris414.dalon.proxy.CommonProxy;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.event.RegistryEvent;
@@ -13,5 +14,6 @@ public class DalonRecipes extends CommonProxy{
 	@SubscribeEvent
 	public static void registerFurnace(RegistryEvent.Register<IRecipe> event) {
 		GameRegistry.addSmelting(DalonItems.unprocessedrunestone, new ItemStack(DalonItems.runestone, 1), 1f);
+		GameRegistry.addSmelting(Item.getItemFromBlock(DalonBlocks.hardenedconcretepowder), new ItemStack(Item.getItemFromBlock(DalonBlocks.whiteconcretebricks), 1), 1f);
 	}
 }

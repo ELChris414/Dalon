@@ -1,0 +1,19 @@
+{
+	"result": {
+		"item": "dalon:hardenedconcretepowder",
+		"count": 1
+	},
+	"ingredients": [
+		{
+			"item": "minecraft:concrete_powder",
+			"data": 0
+		},
+		{
+			"item": "minecraft:clay_ball"
+		},
+		{
+			"item": "minecraft:clay_ball"
+		}
+	],
+	"type": "minecraft:crafting_shapeless"
+}

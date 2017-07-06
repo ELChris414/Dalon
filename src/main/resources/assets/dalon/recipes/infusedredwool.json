@@ -1,0 +1,21 @@
+{
+	"result": {
+		"item": "dalon:infusedredwool",
+		"count": 4
+	},
+	"pattern": [
+		" w ",
+		"wpw",
+		" w "
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"w": {
+			"item": "minecraft:wool",
+			"data": 14
+		},
+		"p": {
+			"item": "minecraft:potion"
+		}
+	}
+}

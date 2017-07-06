@@ -13,6 +13,7 @@ import elchris414.dalon.blocks.InactiveBlock;
 import elchris414.dalon.blocks.RuneForge;
 import elchris414.dalon.blocks.RuneStoneOre;
 import elchris414.dalon.items.InactiveItem;
+import elchris414.dalon.items.InactiveItemBlock;
 import elchris414.dalon.tileentities.RuneForgeTileEntity;
 import elchris414.dalon.worldgen.DalonWorldGen;
 import net.minecraft.block.Block;
@@ -60,6 +61,9 @@ public class CommonProxy {
     	event.getRegistry().register(new RuneForge());
     	GameRegistry.registerTileEntity(RuneForgeTileEntity.class, DalonStrings.MODID + "_runeforge");
     	event.getRegistry().register(new GemInfuser());
+    	event.getRegistry().register(new InactiveBlock("infusedredwool", Material.CLOTH).setHardness(0.8f));
+    	event.getRegistry().register(new InactiveBlock("hardenedconcretepowder", Material.GROUND).setHardness(1f));
+    	event.getRegistry().register(new InactiveBlock("whiteconcretebricks", Material.GROUND).setHardness(2f).setResistance(30f));
     	Dalon.logger.log(Level.INFO, "Loaded blocks");
     	
     }
@@ -67,13 +71,23 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
     	// Blocks
-    	event.getRegistry().register(new ItemBlock(DalonBlocks.runestoneore).setRegistryName(DalonBlocks.runestoneore.getRegistryName()));
-    	event.getRegistry().register(new ItemBlock(DalonBlocks.runestoneblock).setRegistryName(DalonBlocks.runestoneblock.getRegistryName()));
-    	event.getRegistry().register(new ItemBlock(DalonBlocks.runeforge).setRegistryName(DalonBlocks.runeforge.getRegistryName()));
-    	event.getRegistry().register(new ItemBlock(DalonBlocks.geminfuser).setRegistryName(DalonBlocks.geminfuser.getRegistryName()));
+    	event.getRegistry().register(new InactiveItemBlock(DalonBlocks.runestoneore));
+    	event.getRegistry().register(new InactiveItemBlock(DalonBlocks.runestoneblock));
+    	event.getRegistry().register(new InactiveItemBlock(DalonBlocks.runeforge));
+    	event.getRegistry().register(new InactiveItemBlock(DalonBlocks.geminfuser));
+    	event.getRegistry().register(new InactiveItemBlock(DalonBlocks.infusedredwool));
+    	event.getRegistry().register(new InactiveItemBlock(DalonBlocks.hardenedconcretepowder));
+    	event.getRegistry().register(new InactiveItemBlock(DalonBlocks.whiteconcretebricks));
     	// Items
     	event.getRegistry().register(new InactiveItem("runestone"));
     	event.getRegistry().register(new InactiveItem("unprocessedrunestone"));
+    	event.getRegistry().register(new InactiveItem("inkbottle"));
+    	event.getRegistry().register(new InactiveItem("goldenring"));
+    	event.getRegistry().register(new InactiveItem("pen"));
+    	event.getRegistry().register(new InactiveItem("magnifyingglass"));
+    	event.getRegistry().register(new InactiveItem("magnifyingglassgoldenring"));
+    	event.getRegistry().register(new InactiveItem("ironpresser"));
+    	event.getRegistry().register(new InactiveItem("peninkbottle"));
     	// Gems
     	event.getRegistry().register(new InactiveItem("gemenergy"));
     	event.getRegistry().register(new InactiveItem("gemnature"));

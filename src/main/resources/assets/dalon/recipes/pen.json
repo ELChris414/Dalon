@@ -1,0 +1,19 @@
+{
+	"result": {
+		"item": "dalon:pen"
+	},
+	"pattern": [
+		"  g",
+		" i ",
+		"i  "
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"i": {
+			"item": "minecraft:iron_ingot"
+		},
+		"g": {
+			"item": "minecraft:gold_ingot"
+		}
+	}
+}

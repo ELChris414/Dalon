@@ -11,6 +11,20 @@ public class DalonItems {
 	public static InactiveItem runestone;
 	@GameRegistry.ObjectHolder("dalon:unprocessedrunestone")
 	public static InactiveItem unprocessedrunestone;
+	@GameRegistry.ObjectHolder("dalon:inkbottle")
+	public static InactiveItem inkbottle;
+	@GameRegistry.ObjectHolder("dalon:goldenring")
+	public static InactiveItem goldenring;
+	@GameRegistry.ObjectHolder("dalon:pen")
+	public static InactiveItem pen;
+	@GameRegistry.ObjectHolder("dalon:magnifyingglass")
+	public static InactiveItem magnifyingglass;
+	@GameRegistry.ObjectHolder("dalon:magnifyingglassgoldenring")
+	public static InactiveItem magnifyingglassgoldenring;
+	@GameRegistry.ObjectHolder("dalon:ironpresser")
+	public static InactiveItem ironpresser;
+	@GameRegistry.ObjectHolder("dalon:peninkbottle")
+	public static InactiveItem peninkbottle;
 	
 	// Gems
 	@GameRegistry.ObjectHolder("dalon:gemenergy")

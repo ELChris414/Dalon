@@ -1,0 +1,19 @@
+{
+	"result": {
+		"item": "dalon:ironpresser"
+	},
+	"pattern": [
+		" s ",
+		" i ",
+		"iii"
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"s": {
+			"item": "minecraft:stick"
+		},
+		"i": {
+			"item": "minecraft:iron_ingot"
+		}
+	}
+}

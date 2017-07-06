@@ -1,0 +1,19 @@
+{
+	"result": {
+		"item": "dalon:magnifyingglass"
+	},
+	"pattern": [
+		" g ",
+		"gpg",
+		" g "
+	],
+	"type": "minecraft:crafting_shaped",
+	"key": {
+		"g": {
+			"item": "minecraft:glass"
+		},
+		"p": {
+			"item": "minecraft:glass_pane"
+		}
+	}
+}

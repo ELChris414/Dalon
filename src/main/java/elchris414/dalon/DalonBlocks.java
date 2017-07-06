@@ -17,6 +17,12 @@ public class DalonBlocks {
 	public static RuneForge runeforge;
 	@GameRegistry.ObjectHolder("dalon:geminfuser")
 	public static GemInfuser geminfuser;
+	@GameRegistry.ObjectHolder("dalon:infusedredwool")
+	public static InactiveBlock infusedredwool;
+	@GameRegistry.ObjectHolder("dalon:hardenedconcretepowder")
+	public static InactiveBlock hardenedconcretepowder;
+	@GameRegistry.ObjectHolder("dalon:whiteconcretebricks")
+	public static InactiveBlock whiteconcretebricks;
 	
 	@SideOnly(Side.CLIENT)
 	public static void initModels() {
