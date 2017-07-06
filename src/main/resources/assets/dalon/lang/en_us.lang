@@ -5,6 +5,7 @@ tile.dalon.geminfuser.name=Gem Infuser
 tile.dalon.runeforge.name=Rune Forge
 tile.dalon.infusedredwool.name=Red Infused Wool
 tile.dalon.whiteconcretebricks.name=White Concrete Bricks
+tile.dalon.hardenedconcretepowder.name=Hardened Concrete Powder
 
 // Items
 item.dalon.runestone.name=Runestone
@@ -22,7 +23,6 @@ item.dalon.simpleruneredstone.name=Simple Redstone Rune
 item.dalon.simplerunespirit.name=Simple Spirit Rune
 item.dalon.unprocessedrunestone.name=Unprocessed Runestone
 item.dalon.inkbottle.name=Ink bottle
-item.dalon.hardenedconcretepowder.name=Hardened Concrete Powder
 item.dalon.pen.name=Pen
 item.dalon.magnifyingglassgoldenring.name=Magnifying Glass with Golden Ring
 item.dalon.goldering.name=Golden Ring
