@@ -1,5 +1,6 @@
 package elchris414.dalon.items;
 
+import elchris414.dalon.DalonCreativeTab;
 import elchris414.dalon.DalonStrings;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -11,6 +12,7 @@ public class InactiveItem extends Item {
 	public InactiveItem(String unlocalizedName) {
 		setUnlocalizedName(DalonStrings.MODID + "." + unlocalizedName);
 		setRegistryName(unlocalizedName);
+		setCreativeTab(DalonCreativeTab.INSTANCE);
 	}
 	
 	@SideOnly(Side.CLIENT)

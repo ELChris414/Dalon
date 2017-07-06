@@ -1,5 +1,6 @@
 package elchris414.dalon.blocks;
 
+import elchris414.dalon.DalonCreativeTab;
 import elchris414.dalon.DalonStrings;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,6 +15,7 @@ public class InactiveBlock extends Block{
 		super(material);
 		setUnlocalizedName(DalonStrings.MODID + "." + unlocalizedName);
 		setRegistryName(unlocalizedName);
+		setCreativeTab(DalonCreativeTab.INSTANCE);
 	}
 	
 	@SideOnly(Side.CLIENT)

@@ -1,6 +1,7 @@
 package elchris414.dalon.blocks;
 
 import elchris414.dalon.Dalon;
+import elchris414.dalon.DalonCreativeTab;
 import elchris414.dalon.DalonStrings;
 import elchris414.dalon.tileentities.RuneForgeTileEntity;
 import net.minecraft.block.Block;
@@ -38,6 +39,7 @@ public class RuneForge extends Block implements ITileEntityProvider {
 		setRegistryName("runeforge");
 		setHardness(5f);
 		setResistance(6000f);
+		setCreativeTab(DalonCreativeTab.INSTANCE);
 	}
 	
 	@SideOnly(Side.CLIENT)

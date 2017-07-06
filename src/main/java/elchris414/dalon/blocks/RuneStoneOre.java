@@ -2,6 +2,7 @@ package elchris414.dalon.blocks;
 
 import java.util.Random;
 
+import elchris414.dalon.DalonCreativeTab;
 import elchris414.dalon.DalonItems;
 import elchris414.dalon.DalonStrings;
 import net.minecraft.block.Block;
@@ -25,6 +26,7 @@ public class RuneStoneOre extends Block {
 		setHardness(2f);
 		setResistance(15f);
 		setHarvestLevel("pickaxe", 2);
+		setCreativeTab(DalonCreativeTab.INSTANCE);
 	}
 	
 	@SideOnly(Side.CLIENT)

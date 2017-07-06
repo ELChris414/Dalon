@@ -1,5 +1,6 @@
 package elchris414.dalon.blocks;
 
+import elchris414.dalon.DalonCreativeTab;
 import elchris414.dalon.DalonStrings;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -17,6 +18,7 @@ public class GemInfuser extends Block{
 		setRegistryName("geminfuser");
 		setHardness(5f);
 		setResistance(6000f);
+		setCreativeTab(DalonCreativeTab.INSTANCE);
 	}
 	
 	@SideOnly(Side.CLIENT)
