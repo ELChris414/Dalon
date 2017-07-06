@@ -2,9 +2,9 @@
 {
   "modid": "dalon",
   "name": "Dalon",
-  "description": "The bridge between the 6 bases of the world",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "description": "The bridge between the 6 assets of the world",
+  "version": "0.1.0",
+  "mcversion": "1.12",
   "url": "",
   "updateUrl": "",
   "authorList": ["ELChris414"],
