@@ -1,4 +1,12 @@
+// Blocks
 tile.dalon.runestoneore.name=Runestone Ore
+tile.dalon.runestoneblock.name=Runestone Block
+tile.dalon.geminfuser.name=Gem Infuser
+tile.dalon.runeforge.name=Rune Forge
+tile.dalon.infusedredwool.name=Red Infused Wool
+tile.dalon.whiteconcretebricks.name=White Concrete Bricks
+
+// Items
 item.dalon.runestone.name=Runestone
 item.dalon.gemenergy.name=Energy Gem
 item.dalon.gemmagic.name=Magic Gem
@@ -12,3 +20,16 @@ item.dalon.simplerunenature.name=Simple Nature Rune
 item.dalon.simplerunetechnology.name=Simple Technology Rune
 item.dalon.simpleruneredstone.name=Simple Redstone Rune
 item.dalon.simplerunespirit.name=Simple Spirit Rune
+item.dalon.unprocessedrunestone.name=Unprocessed Runestone
+item.dalon.inkbottle.name=Ink bottle
+item.dalon.hardenedconcretepowder.name=Hardened Concrete Powder
+item.dalon.pen.name=Pen
+item.dalon.magnifyingglassgoldenring.name=Magnifying Glass with Golden Ring
+item.dalon.goldering.name=Golden Ring
+item.dalon.magnifyingglass.name=Magnifying Glass
+item.dalon.ironpresser.name=Iron Presser
+item.dalon.peninkbottle.name=Pen in Ink Bottle
+
+// Creative Tab
+itemGroup.dalon=Dalon
+
