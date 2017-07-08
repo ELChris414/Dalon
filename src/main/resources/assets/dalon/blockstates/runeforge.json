@@ -12,11 +12,12 @@
         "6": "blocks/coal_block",
         "7": "dalon:blocks/runeforge/ink"
     },
-    "model":"dalon:runeforge"
+    "model":"dalon:runeforge",
+    "transform": "forge:default-block"
   },
   "variants": {
 	"facing":{
-        "north":{ "y":180, "transform": "forge:default-block" },
+        "north":{ "y":180 },
         "east":{ "y":270 },
         "south":{ "y":0 },
         "west":{ "y":90 },
