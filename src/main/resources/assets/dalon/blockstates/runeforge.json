@@ -12,16 +12,16 @@
         "6": "blocks/coal_block",
         "7": "dalon:blocks/runeforge/ink"
     },
-    "transform": "forge:default-block"
+    "model":"dalon:runeforge"
   },
   "variants": {
 	"facing":{
-        "north":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":180 } } },
-        "east":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":270 } } },
-        "south":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":0   } } },
-        "west":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":90  } } },
-        "up":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":180 } } },
-        "down":{"submodel":{ "front":{ "model":"dalon:runeforge", "y":180 } } }
+        "north":{ "y":180, "transform": "forge:default-block" },
+        "east":{ "y":270 },
+        "south":{ "y":0 },
+        "west":{ "y":90 },
+        "up":{ "y":180 },
+        "down":{ "y":180 }
   	}
   }
 }
