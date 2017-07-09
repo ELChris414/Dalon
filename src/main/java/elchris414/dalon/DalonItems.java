@@ -57,5 +57,25 @@ public class DalonItems {
 	@SideOnly(Side.CLIENT)
 	public static void initModels() {
 		runestone.initModel();
+		unprocessedrunestone.initModel();
+		inkbottle.initModel();
+		goldenring.initModel();
+		pen.initModel();
+		magnifyingglass.initModel();
+		magnifyingglassgoldenring.initModel();
+		ironpresser.initModel();
+		peninkbottle.initModel();
+		gemenergy.initModel();
+		gemnature.initModel();
+		gemmagic.initModel();
+		gemredstone.initModel();
+		gemtechnology.initModel();
+		gemspirit.initModel();
+		simpleruneenergy.initModel();
+		simplerunenature.initModel();
+		simplerunemagic.initModel();
+		simpleruneredstone.initModel();
+		simplerunetechnology.initModel();
+		simplerunespirit.initModel();
 	}
 }

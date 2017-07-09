@@ -30,5 +30,8 @@ public class DalonBlocks {
 		runestoneblock.initModel();
 		runeforge.initModel();
 		geminfuser.initModel();
+		infusedredwool.initModel();
+		hardenedconcretepowder.initModel();
+		whiteconcretebricks.initModel();
 	}
 }

@@ -1,10 +1,1 @@
-{
-  "forge_marker": 1,
-  "defaults": {
-    "model": "dalon:runestoneore"
-  },
-  "variants": {
-    "normal": [{}],
-    "inventory": [{}]
-  }
-}
+{"forge_marker": 1, "defaults": {"model": "dalon:runestoneore"}, "variants": {"normal": [{}], "inventory": [{}]}}
