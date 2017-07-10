@@ -2,6 +2,7 @@ package elchris414.dalon.containers;
 
 import javax.annotation.Nullable;
 
+import elchris414.dalon.slots.RuneForgeOutputSlot;
 import elchris414.dalon.tileentities.RuneForgeTileEntity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
@@ -42,7 +43,7 @@ public class RuneForgeContainer extends Container {
 	private void addOwnSlots() {
 		IItemHandler itemHandler = this.te.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);		
 		
-		addSlotToContainer(new SlotItemHandler(itemHandler, 0, 82, 27)); // Center
+		addSlotToContainer(new RuneForgeOutputSlot(itemHandler, 0, 82, 27)); // Center
 		
 		// LEFT
 		addSlotToContainer(new SlotItemHandler(itemHandler, 1, 8, 27));
@@ -53,13 +54,6 @@ public class RuneForgeContainer extends Container {
 		addSlotToContainer(new SlotItemHandler(itemHandler, 4, 118, 27));
 		addSlotToContainer(new SlotItemHandler(itemHandler, 5, 137, 27));
 		addSlotToContainer(new SlotItemHandler(itemHandler, 6, 156, 27));
-		
-		/*int slotIndex = 0;
-		for (int i = 0; i < itemHandler.getSlots(); i++) {
-			addSlotToContainer(new SlotItemHandler(itemHandler, slotIndex, x, y));
-			slotIndex++;
-			x += 18;
-		}*/
 	}
 	
 	@Nullable
