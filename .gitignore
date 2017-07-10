@@ -8,4 +8,5 @@
 modding_Client.launch
 modding_Server.launch
 /run/
-generateModels.py
+*.py
+*.pdn
