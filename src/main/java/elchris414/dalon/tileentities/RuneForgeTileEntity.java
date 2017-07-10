@@ -9,7 +9,7 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
 public class RuneForgeTileEntity extends TileEntity {
-	public static final int SIZE = 9;
+	public static final int SIZE = 7;
 	
 	private ItemStackHandler itemStackHandler = new ItemStackHandler(SIZE) {
 		@Override
