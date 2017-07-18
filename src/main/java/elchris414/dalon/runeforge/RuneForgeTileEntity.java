@@ -1,4 +1,4 @@
-package elchris414.dalon.tileentities;
+package elchris414.dalon.runeforge;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;

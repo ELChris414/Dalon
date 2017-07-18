@@ -1,9 +1,8 @@
-package elchris414.dalon.blocks;
+package elchris414.dalon.runeforge;
 
 import elchris414.dalon.Dalon;
 import elchris414.dalon.DalonCreativeTab;
 import elchris414.dalon.DalonStrings;
-import elchris414.dalon.tileentities.RuneForgeTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;

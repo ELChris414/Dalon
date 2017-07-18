@@ -2,8 +2,8 @@ package elchris414.dalon;
 
 import elchris414.dalon.blocks.GemInfuser;
 import elchris414.dalon.blocks.InactiveBlock;
-import elchris414.dalon.blocks.RuneForge;
 import elchris414.dalon.blocks.RuneStoneOre;
+import elchris414.dalon.runeforge.RuneForge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;

@@ -1,8 +1,7 @@
-package elchris414.dalon.containers;
+package elchris414.dalon.runeforge;
 
 import javax.annotation.Nullable;
 
-import elchris414.dalon.tileentities.RuneForgeTileEntity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;

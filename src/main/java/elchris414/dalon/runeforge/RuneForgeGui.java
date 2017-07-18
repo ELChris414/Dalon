@@ -1,8 +1,6 @@
-package elchris414.dalon.guis;
+package elchris414.dalon.runeforge;
 
 import elchris414.dalon.DalonStrings;
-import elchris414.dalon.containers.RuneForgeContainer;
-import elchris414.dalon.tileentities.RuneForgeTileEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiBeacon;

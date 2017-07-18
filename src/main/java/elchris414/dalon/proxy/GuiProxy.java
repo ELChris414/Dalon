@@ -1,8 +1,8 @@
 package elchris414.dalon.proxy;
 
-import elchris414.dalon.containers.RuneForgeContainer;
-import elchris414.dalon.guis.RuneForgeGui;
-import elchris414.dalon.tileentities.RuneForgeTileEntity;
+import elchris414.dalon.runeforge.RuneForgeContainer;
+import elchris414.dalon.runeforge.RuneForgeGui;
+import elchris414.dalon.runeforge.RuneForgeTileEntity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
