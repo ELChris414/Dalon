@@ -3,8 +3,14 @@ package elchris414.dalon.guis;
 import elchris414.dalon.DalonStrings;
 import elchris414.dalon.containers.RuneForgeContainer;
 import elchris414.dalon.tileentities.RuneForgeTileEntity;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.inventory.GuiBeacon;
 import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class RuneForgeGui extends GuiContainer {
 	public static final int WIDTH = 180;
@@ -31,4 +37,5 @@ public class RuneForgeGui extends GuiContainer {
 		super.drawScreen(mouseX, mouseY, partialTicks);
 		super.renderHoveredToolTip(mouseX, mouseY);
 	}
+	
 }

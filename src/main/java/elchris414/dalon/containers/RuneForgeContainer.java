@@ -2,11 +2,12 @@ package elchris414.dalon.containers;
 
 import javax.annotation.Nullable;
 
-import elchris414.dalon.slots.RuneForgeOutputSlot;
 import elchris414.dalon.tileentities.RuneForgeTileEntity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.InventoryCraftResult;
+import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -16,6 +17,9 @@ import net.minecraftforge.items.SlotItemHandler;
 public class RuneForgeContainer extends Container {
 	
 	private RuneForgeTileEntity te;
+	
+	public InventoryCrafting craftMatrix = new InventoryCrafting(this, 1, 6);
+    public InventoryCraftResult craftResult = new InventoryCraftResult();
 	
 	public RuneForgeContainer(IInventory playerInventory, RuneForgeTileEntity te) {
 		this.te = te;
@@ -43,7 +47,13 @@ public class RuneForgeContainer extends Container {
 	private void addOwnSlots() {
 		IItemHandler itemHandler = this.te.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);		
 		
-		addSlotToContainer(new RuneForgeOutputSlot(itemHandler, 0, 82, 27)); // Center
+		addSlotToContainer(new SlotItemHandler(itemHandler, 0, 82, 27) {
+			// Center
+			@Override
+			public boolean isItemValid(ItemStack stack) {
+				return false;
+			}
+		});
 		
 		// LEFT
 		addSlotToContainer(new SlotItemHandler(itemHandler, 1, 8, 27));
