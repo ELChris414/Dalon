@@ -19,6 +19,8 @@ public class Dalon {
 	
 	public static Logger logger;
 	
+	public Object[] runeForgeRecipes;
+	
 	@Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();

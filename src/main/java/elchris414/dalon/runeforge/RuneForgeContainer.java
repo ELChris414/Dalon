@@ -2,6 +2,7 @@ package elchris414.dalon.runeforge;
 
 import javax.annotation.Nullable;
 
+import elchris414.dalon.DalonItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
@@ -52,50 +53,80 @@ public class RuneForgeContainer extends Container {
 			public boolean isItemValid(ItemStack stack) {
 				return false;
 			}
+			@Override
+			public void onSlotChanged()
+		    {
+		        this.inventory.markDirty();
+		    }
 		});
 		
 		// LEFT
-		addSlotToContainer(new SlotItemHandler(itemHandler, 1, 8, 27));
-		addSlotToContainer(new SlotItemHandler(itemHandler, 2, 27, 27));
-		addSlotToContainer(new SlotItemHandler(itemHandler, 3, 46, 27));
+		addSlotToContainer(new SlotItemHandler(itemHandler, 1, 8, 27) {
+			@Override
+			public void onSlotChanged()
+		    {
+		        this.inventory.markDirty();
+		        markDirty();
+		    }
+		}); // Gem
+		addSlotToContainer(new SlotItemHandler(itemHandler, 2, 27, 27) {
+			@Override
+			public void onSlotChanged()
+		    {
+		        this.inventory.markDirty();
+		        markDirty();
+		    }
+		}); // Rune Slot
+		addSlotToContainer(new SlotItemHandler(itemHandler, 3, 46, 27) {
+			@Override
+			public void onSlotChanged()
+		    {
+		        this.inventory.markDirty();
+		        markDirty();
+		    }
+		}); // Category item
 		
 		// RIGHT
-		addSlotToContainer(new SlotItemHandler(itemHandler, 4, 118, 27));
-		addSlotToContainer(new SlotItemHandler(itemHandler, 5, 137, 27));
-		addSlotToContainer(new SlotItemHandler(itemHandler, 6, 156, 27));
-	}
-	
-	@Nullable
-	@Override
-	public ItemStack transferStackInSlot(EntityPlayer player, int index) {
-		ItemStack itemstack = ItemStack.EMPTY;
-        Slot slot = this.inventorySlots.get(index);
-
-        if (slot != null && slot.getHasStack()) {
-            ItemStack itemstack1 = slot.getStack();
-            itemstack = itemstack1.copy();
-
-            if (index < RuneForgeTileEntity.SIZE) {
-                if (!this.mergeItemStack(itemstack1, RuneForgeTileEntity.SIZE, this.inventorySlots.size(), true)) {
-                    return ItemStack.EMPTY;
-                }
-            } else if (!this.mergeItemStack(itemstack1, 0, RuneForgeTileEntity.SIZE, false)) {
-                return ItemStack.EMPTY;
-            }
-
-            if (itemstack1.isEmpty()) {
-                slot.putStack(ItemStack.EMPTY);
-            } else {
-                slot.onSlotChanged();
-            }
-        }
-
-        return itemstack;
+		addSlotToContainer(new SlotItemHandler(itemHandler, 4, 118, 27) {
+			@Override
+			public void onSlotChanged()
+		    {
+		        this.inventory.markDirty();
+		        markDirty();
+		    }
+		});
+		addSlotToContainer(new SlotItemHandler(itemHandler, 5, 137, 27) {
+			@Override
+			public void onSlotChanged()
+		    {
+		        this.inventory.markDirty();
+		        markDirty();
+		    }
+		});
+		addSlotToContainer(new SlotItemHandler(itemHandler, 6, 156, 27) {
+			@Override
+			public void onSlotChanged()
+		    {
+		        this.inventory.markDirty();
+		        markDirty();
+		    }
+		});
 	}
 
 	@Override
 	public boolean canInteractWith(EntityPlayer playerIn) {
 		return te.canInteractWith(playerIn);
+	}
+	
+	public void markDirty() {
+		ItemStack gemSlot = this.inventoryItemStacks.get(1);
+		ItemStack runeSlot = this.inventoryItemStacks.get(2);
+		ItemStack itemSlot = this.inventoryItemStacks.get(3);
+		
+		if (!gemSlot.isEmpty() && !runeSlot.isEmpty() && !itemSlot.isEmpty()) {
+			this.inventorySlots.get(0).putStack(RuneForgeRecipes.checkForRecipe(gemSlot, runeSlot, itemSlot));
+			this.inventorySlots.get(0).onSlotChanged();
+		}
 	}
 
 }
